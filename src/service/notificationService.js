@@ -1,12 +1,11 @@
 
 
-export const sendPushNotification = async (expoPushToken) => {
-  console.log(">>>>>>>>>>>>>>>>>>",expoPushToken)
+export const sendPushNotification = async (expoPushToken, title, body) => {
   const message = {
-    to: expoPushToken, // Ensure this token is correct
+    to: expoPushToken,
     sound: 'default',
-    title: 'Hello!',
-    body: 'This is a notification sent from your app.',
+    title: title,
+    body: body,
     data: { data: 'some data' },
   };
 
@@ -26,23 +25,4 @@ export const sendPushNotification = async (expoPushToken) => {
   } catch (error) {
     console.error('Error sending push notification:', error);
   }
-
-
-  // const message = {
-  //   to: expoPushToken,
-  //   sound: 'default',
-  //   title: 'Test title',
-  //   body: 'Test body',
-  //   data: { testData: 'test data' },
-  // };
- 
-  // await fetch('https://exp.host/--/api/v2/push/send', {
-  //   method: 'POST',
-  //   headers: {
-  //     Accept: 'application/json',
-  //     'Accept-encoding': 'gzip, deflate',
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify(message),
-  // });
 };

@@ -22,10 +22,17 @@
       "package": "com.anonymous.AsterideExpoApp",
       "googleServicesFile": "./android/app/google-services.json",
       "useNextNotificationsApi": true,
-      "permissions": ["NOTIFICATIONS"]
+      "permissions": [
+        "NOTIFICATIONS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "701293d0-ef74-4270-9868-d164082d37b0"
+      }
     }
   }
 }

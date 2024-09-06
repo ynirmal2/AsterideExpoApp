@@ -26,8 +26,8 @@
       "parking": 2,
       "description": "1BHK Multistorey Apartment for Resale in Durga Pooja Apartment at Sector 20 Dwarka",
       "image": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "latitude": 40.748900,
-      "longitude": -73.985500
+      "latitude":  19.4339047,
+      "longitude":  72.822191
     },
     
     {
@@ -58,8 +58,8 @@
       "parking": 2,
       "description": "5BHK Multistorey Apartment for Resale in Durga Pooja Apartment at Sector 10 Dwarka",
       "image": "https://images.pexels.com/photos/164522/pexels-photo-164522.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "latitude": 40.748900,
-      "longitude": -73.985500
+      "latitude":  19.4339047,
+      "longitude":  72.822191
     }
   ]
   
