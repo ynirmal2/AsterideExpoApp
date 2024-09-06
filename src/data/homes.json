@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "shortAdd": "Sector 13, Dwarka, Delhi",
+      "address": "Sector 13 Main Rd, Phase 1, Sector 13, Dwarka, Delhi",
+      "city": "Delhi",
+      "floorspace": 1264,
+      "beds": 3,
+      "baths": 1,
+      "price": 295000,
+      "parking": 2,
+      "description": "3BHK Multistorey Apartment for Resale in Durga Pooja Apartment at Sector 13 Dwarka",
+      "image": "https://wallpapers.com/images/hd/real-estate-tropical-mansion-20c9os156eqcqd4j.jpg",
+      "latitude": 40.748817,
+      "longitude": -73.985428
+    },
+    {
+      "id": 2,
+      "shortAdd": "Sector 20, Dwarka, Delhi",
+      "address": "Sector 20 Main Rd, Phase 1, Sector 20, Dwarka, Delhi",
+      "city": "Delhi",
+      "floorspace": 1264,
+      "beds": 3,
+      "baths": 1,
+      "price": 295000,
+      "parking": 2,
+      "description": "1BHK Multistorey Apartment for Resale in Durga Pooja Apartment at Sector 20 Dwarka",
+      "image": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "latitude": 40.748900,
+      "longitude": -73.985500
+    },
+    
+    {
+      "id": 3,
+      "shortAdd": "Sector 16, Dwarka, Delhi",
+      "address": "Sector 16 Main Rd, Phase 1, Sector 16, Dwarka, Delhi",
+      "city": "Delhi",
+      "floorspace": 1264,
+      "beds": 3,
+      "baths": 1,
+      "price": 295000,
+      "parking": 2,
+      "description": "4BHK Multistorey Apartment for Resale in Durga Pooja Apartment at Sector 16 Dwarka",
+      "image": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "latitude": 40.748900,
+      "longitude": -73.985500
+    },
+    
+    {
+      "id": 4,
+     "shortAdd": "Sector 10, Dwarka, Delhi",
+      "address": "Sector 10 Main Rd, Phase 1, Sector 10, Dwarka, Delhi",
+      "city": "Delhi",
+      "floorspace": 1264,
+      "beds": 3,
+      "baths": 1,
+      "price": 295000,
+      "parking": 2,
+      "description": "5BHK Multistorey Apartment for Resale in Durga Pooja Apartment at Sector 10 Dwarka",
+      "image": "https://images.pexels.com/photos/164522/pexels-photo-164522.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "latitude": 40.748900,
+      "longitude": -73.985500
+    }
+  ]
+  

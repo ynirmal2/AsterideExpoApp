@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "79426257771",
+    "project_id": "asterideexpoapp",
+    "storage_bucket": "asterideexpoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79426257771:android:e4b77a5c9213d77e84022e",
+        "android_client_info": {
+          "package_name": "com.anonymous.AsterideExpoApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-OnYwlHCn_LIN0G4qyZTpkk4ndEzOhaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
