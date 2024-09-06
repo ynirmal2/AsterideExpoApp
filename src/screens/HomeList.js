@@ -3,8 +3,40 @@ import { View, Text, Image, Button, FlatList, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import homesData from '../data/homes.json'; // Mock API data
 
+import * as Notifications from 'expo-notifications';
+
 const HomeList = ({ navigation }) => {
   const [homes, setHomes] = useState([]);
+
+  const [notification, setNotification] = useState(false);
+  const notificationListener = React.useRef();
+  const responseListener = React.useRef();
+
+  useEffect(() => {
+    // Configure notification handling
+    Notifications.setNotificationHandler({
+      handleNotification: async () => {
+        return {
+          shouldShowAlert: true,
+          shouldPlaySound: true,
+          shouldSetBadge: true,
+        };
+      },
+    });
+
+    notificationListener.current = Notifications.addNotificationReceivedListener(notification => {
+      setNotification(notification);
+    });
+
+    responseListener.current = Notifications.addNotificationResponseReceivedListener(response => {
+      console.log(response, "<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>");
+    });
+
+    return () => {
+      Notifications.removeNotificationSubscription(notificationListener.current);
+      Notifications.removeNotificationSubscription(responseListener.current);
+    };
+  }, []);
 
   useEffect(() => {
     setHomes(homesData);
@@ -22,7 +54,7 @@ const HomeList = ({ navigation }) => {
             }} style={styles.image} />
             <Text
               style={
-                [styles.lineHeight, styles.paddingButtom10,styles.addText]
+                [styles.lineHeight, styles.paddingButtom10, styles.addText]
               }>{item.shortAdd}</Text>
             <Text
               style={
@@ -66,7 +98,7 @@ const styles = StyleSheet.create({
   },
   addText: {
     fontSize: 16,
-    textAlign:'center'
+    textAlign: 'center'
   },
   paddingButtom10: {
     paddingBottom: 10

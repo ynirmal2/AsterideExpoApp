@@ -7,6 +7,7 @@ import * as Notifications from 'expo-notifications';
 import 'firebase/messaging';
 import { Platform, } from 'react-native';
 import * as Device from 'expo-device';
+import LoginScreen from './src/screens/LoginScreen';
 
 const Stack = createStackNavigator();
 
@@ -43,8 +44,9 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="HomeList">
-        <Stack.Screen name="HomeList" component={HomeList} />
+      <Stack.Navigator initialRouteName="LoginScreen">
+      <Stack.Screen name="LoginScreen" component={LoginScreen} />
+      <Stack.Screen name="Home" component={HomeList} />
         <Stack.Screen name="HomeDetails" component={HomeDetails} />
       </Stack.Navigator>
     </NavigationContainer>
